@@ -22,6 +22,9 @@
                 shade: 0.4,
                 btn: ['确认', '关闭'],
                 callback: null,
+                endCallBack: null, //關閉窗口時的回調
+                btn2: null,
+                btn3: null,
                 shadeClose: false,
                 fix: false,
                 closeBtn: 1
@@ -38,6 +41,9 @@
                 fix: _option.fix,
                 closeBtn: _option.closeBtn,  // 1表示带关闭，0表示不带
                 yes: _option.callback,
+                end: _option.endCallBack, //關閉窗口時的回調
+                btn2: _option.btn2,
+                btn3: _option.btn3,
                 cancel: function (index) {
                     return true;
                 }
@@ -62,6 +68,9 @@
                 shade: 0.4,
                 btn: null,
                 callback: null,
+                endCallBack: null, //關閉窗口時的回調
+                btn2: null,
+                btn3: null,
                 shadeClose: true,
                 fix: true,
                 closeBtn: 0
@@ -78,6 +87,9 @@
                 fix: _option.fix,
                 closeBtn: _option.closeBtn,  // 1表示带关闭，0表示不带
                 yes: _option.callback,
+                end: _option.endCallBack,  //關閉窗口時的回調
+                btn2: _option.btn2,
+                btn3: _option.btn3,
                 cancel: function (index) {
                     return true;
                 }
