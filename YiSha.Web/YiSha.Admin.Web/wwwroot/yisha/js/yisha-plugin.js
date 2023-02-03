@@ -346,6 +346,18 @@
                 value = value.toString();
             }
             $("#" + $(target).attr("id") + "_select").val(value.split(',')).trigger("change");
+        },
+        getText: function (target) {
+            var valArray = $("#" + $(target).attr("id") + "_select").select2('data')[0].text;
+
+            if (valArray == null) {
+                return "";
+            }
+            else {
+                var val = valArray.toString();
+                // -1代表查询条件所有，就把这个查询条件置为空
+                return val;
+            }
         }
     };
 

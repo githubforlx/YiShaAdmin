@@ -181,6 +181,9 @@
                 zTreeObj.setting.callback.onClick('setValue', zTreeObj.setting.treeId, node); //触发onclick
             }
             return $(target);
+        },
+        getText: function (target) {
+            return $(target).attr("data-value");
         }
     };
     $.fn.ysComboBoxTree.defaults = {
