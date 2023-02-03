@@ -177,6 +177,11 @@ namespace YiSha.Data.Repository
             pagination.TotalCount = data.total;
             return data.Item2;
         }
+
+        public async ValueTask<int> FindCount<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            return await db.FindCount<T>(condition);
+        }
         #endregion
 
         #region 数据源 查询

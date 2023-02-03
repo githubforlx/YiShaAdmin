@@ -80,6 +80,8 @@ namespace YiSha.Data
         Task<object> FindObject(string strSql);
         Task<object> FindObject(string strSql, DbParameter[] dbParameter);
         Task<T> FindObject<T>(string strSql) where T : class;
+
+        ValueTask<int> FindCount<T>(Expression<Func<T, bool>> condition) where T : class, new();
         #endregion
     }
 }

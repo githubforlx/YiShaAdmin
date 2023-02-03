@@ -392,6 +392,11 @@ namespace YiSha.Data.EF
                 return (total, new List<T>());
             }
         }
+
+        public async ValueTask<int> FindCount<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            return await dbContext.Set<T>().CountAsync().ConfigureAwait(false);
+        }
         #endregion
 
         #region 数据源查询
@@ -449,6 +454,7 @@ namespace YiSha.Data.EF
             var list = await dbContext.SqlQuery<T>(strSql);
             return list.FirstOrDefault();
         }
+
         #endregion
     }
 }
