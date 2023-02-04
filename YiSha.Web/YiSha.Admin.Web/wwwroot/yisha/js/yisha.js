@@ -42,8 +42,20 @@
                 closeBtn: _option.closeBtn,  // 1表示带关闭，0表示不带
                 yes: _option.callback,
                 end: _option.endCallBack, //關閉窗口時的回調
-                btn2: _option.btn2,
-                btn3: _option.btn3,
+                btn2: function (index, layero) {
+                    if (_option.btn2) { _option.btn2(index, layero); }
+                    else {
+                        return true;
+                    }
+                    return false;
+                },
+                btn3: function (index, layero) {
+                    if (_option.btn3) { _option.btn3(index, layero); }
+                    else {
+                        return true;
+                    }
+                    return false;
+                },
                 cancel: function (index) {
                     return true;
                 }
@@ -88,8 +100,20 @@
                 closeBtn: _option.closeBtn,  // 1表示带关闭，0表示不带
                 yes: _option.callback,
                 end: _option.endCallBack,  //關閉窗口時的回調
-                btn2: _option.btn2,
-                btn3: _option.btn3,
+                btn2: function (index, layero) {
+                    if (_option.btn2) { _option.btn2(index, layero); }
+                    else {
+                        return true;
+                    }
+                    return false;
+                },
+                btn3: function (index, layero) {
+                    if (_option.btn3) { _option.btn3(index, layero); }
+                    else {
+                        return true;
+                    }
+                    return false;
+                },
                 cancel: function (index) {
                     return true;
                 }
