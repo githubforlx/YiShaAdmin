@@ -738,11 +738,11 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 
 .btn-primary.btn-outline {
-    color: #1ab394;
+    color: #1c84c6;
 }
 
 .btn-success.btn-outline {
-    color: #1c84c6;
+    color: #1ab394;
 }
 
 .btn-info.btn-outline {
@@ -779,8 +779,8 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
     }
 
         .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-            background-color: #1dc5a3;
-            border-color: #1dc5a3;
+            background-color: #1f90d8 ;
+            border-color: #1f90d8;
         }
 
 .btn-success {
@@ -800,8 +800,8 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
     }
 
         .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success.active[disabled], fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-            background-color: #1f90d8;
-            border-color: #1f90d8;
+            background-color: #1dc5a3;
+            border-color: #1dc5a3;
         }
 
 .btn-info {
@@ -957,6 +957,7 @@ button.btn-primary.dim {
     }
 
 button.btn-default.dim {
+    color: #333;
     box-shadow: inset 0px 0px 0px #b3b3b3, 0px 5px 0px 0px #b3b3b3, 0px 10px 5px #999999;
 }
 
